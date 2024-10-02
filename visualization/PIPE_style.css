@@ -1,0 +1,154 @@
+.pipeline-info-container{
+  /* visualize text nicely */
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin: 10px;
+  padding: 10px;
+}
+
+.previous-cycle {
+  color: #555!important;
+}
+
+.current-cycle {
+  color: #d65050!important;
+  font-weight: bold;
+}
+
+.pipeline-container {
+    display: grid;
+    width: 100%!important;
+    /* grid-template-columns: repeat(5, 1fr); */
+    grid-template-columns: 10.442% 17.84% 17.84% 17.84% 17.84% 17.84%;
+    /* gap: 10px; */
+    border-collapse: collapse!important;
+    margin: 0px!important;
+    padding: 0px!important;
+
+  }
+  .stage {
+    border: 1px solid rgb(191, 191, 191);
+    padding: 10px!important;
+    /* margin: 0px!important; */
+  }
+  .stage-placeholder {
+    visibility: hidden; /* Makes the element invisible, but it still occupies 
+    space */
+    padding: 10px!important;
+
+  }
+  .opcode {
+    background-color: #e4e4e4;
+    margin: 0px!important;
+  }
+  .stage-info {
+    font-family: monospace;
+    white-space: pre;
+  }
+  .stage-title {
+    text-align: center;
+    font-weight: bold;
+    margin: 0px!important;
+  }
+  .cycle-text {
+    text-align: center;
+    color: #333;
+    margin: 10px 0;
+    display: block;
+  }
+  .cell-container {
+    display: inline-block;
+    grid-template-columns: repeat(8, 1fr); /* Creates 8 columns */
+    gap: 2px;
+    margin-bottom: 5px;
+  }
+
+  .cell {
+  border: 1px solid #aaa; /* Light grey border for cells */
+  text-align: center;
+  padding: 2px;
+  font-family: monospace;
+  background-color: #f0f0f0;
+  display: inline-block;    
+  }
+
+  .hex_prefix {
+    /* border: 1px solid #aaa; Light grey border for cells */
+    text-align: center;
+    padding: 2px;
+    font-family: monospace;
+    background-color: #ffffff;
+    display: inline-block;    
+  }
+  
+
+  .opcode, .alu-op {
+  background-color: #d0ebff; /* Light blue background for opcodes */
+  margin: 5px 0;
+  padding: 2px;
+  text-align: center;
+  font-weight: bold;
+  }
+
+  .hex-number {
+  color: #505050; /* Darker text for visibility */
+  font-family: monospace;
+  background-color: #e6f7ff; /* Very light blue for hex numbers */
+  padding: 2px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-right: 5px;
+  }
+
+
+  .text-lightgreen {
+    color: rgb(56, 194, 56);
+  }
+  
+  .text-lightcoral {
+    color: rgb(247, 79, 79);
+  }
+  
+  
+  .text-lightblue {
+    color: rgb(86, 40, 172);
+  }
+    
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 10px;
+  }
+  .cycle-header {
+    background-color: hsl(223, 88%, 58%);
+    color: white;
+    width: 7%;
+    min-width: 50px;
+  }
+  .instruction-header {
+    background-color: #f9d389;
+    color: white;
+    width: 12%;
+    min-width: 100px;
+  }
+  .red-cell {
+    background-color: #e85454;
+  }
+  .white-cell {
+    background-color: #ddd;
+  }
+  .green-cell {
+    background-color: #9ff09f;
+  }
+  .yellow-cell {
+    background-color: #f7f58d;
+  }
+  .purple-cell {
+    background-color: #d3a0f7;
+  }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pipeline Data Visualization</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+    <link rel="stylesheet" href="PIPE_style.css">
+</head>
+<body>
+    <h2>Pipeline Data Visualization</h2>
+    <button id="screenshotBtn">Take Screenshot</button>
+    <button id="startRecordingBtn">Start Recording</button>
+    <button id="stopRecordingBtn" disabled>Stop Recording</button>
+    <!-- breka lines -->
+
+    <div id="pipeline-info-container" class="pipeline-info-container"></div>
+    <div id="pipeline-container" class="pipeline-container">
+    <div id="data-container"></div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <table id="dynamicTable">
+        <tr>
+          <th class="cycle-header">Cycle</th>
+          <!-- <th class="instruction-header">Instr in</th> -->
+          <th class="instruction-header" id="fetch-instruction">F</th>
+            <th class="instruction-header" id="decode-instruction">D</th>
+            <th class="instruction-header" id="execute-instruction">X</th>
+            <th class="instruction-header" id="memory-instruction">M</th>
+            <th class="instruction-header" id="write-instruction">W</th>
+          <!-- <th class="cycle-header">Instr out</th> -->
+        </tr>
+        <!-- Rows will be added dynamically here -->
+      </table>
+    <script src="app.js"></script>
+</body>
+</html>
